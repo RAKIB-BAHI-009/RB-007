@@ -2,68 +2,58 @@ module.exports.config = {
   name: "prefix",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "MrTomXxX",
+  credits: "BADOL-KHAN",
   description: "See the prefix of BOT",
   commandCategory: "For Admins",
   usages: "",
   cooldowns: 5,
 };
 
-module.exports.handleEvent = async ({ event, api, Threads }) => {
-  var { threadID, messageID, body, senderID } = event;
-  //if (senderID == global.data.botID) return;
-  if ((this.config.credits) != "\x4d\x72\x54\x6f\x6d\x58\x78\x58") { return api.sendMessage(`Sai credits!`, threadID, messageID)}
-  function out(data) {
-    api.sendMessage(data, threadID, messageID)
+module.exports.handleEvent = async function ({ api, event }) {
+  const axios = require("axios");
+  const request = require("request");
+  const fs = require("fs");
+  const moment = require("moment-timezone");
+  var times = moment.tz("Asia/Dhaka").format("hh:mm:ss || D/MM/YYYY");
+  var thu = moment.tz("Asia/Dhaka").format("dddd");
+  moment.tz("Asia/Dhaka").format("dddd");
+  if (thu == "Sunday") thu = "রবিবার";
+  if (thu == "Monday") thu = "সোমবার";
+  if (thu == "Tuesday") thu = "মঙ্গলবার";
+  if (thu == "Wednesday") thu = "বুধবার";
+  if (thu == "Thursday") thu = "বৃহস্পতিবার";
+  if (thu == "Friday") thu = "শুক্রবার";
+  if (thu == "Saturday") thu = "শনিবার";
+  var { threadID, messageID, body } = event,
+    { PREFIX } = global.config;
+  let threadSetting = global.data.threadData.get(threadID) || {};
+  let prefix = threadSetting.PREFIX || PREFIX;
+const { createReadStream, existsSync, mkdirSync, readdirSync } = global.nodemodule["fs-extra"];
+			let { threadName, participantIDs } = await api.getThreadInfo(threadID);
+  const timeStart = Date.now();
+  const tdung = require("./../../B4D9L/Prefix.json");
+  var video = tdung[Math.floor(Math.random() * tdung.length)].trim();
+  function vtuanhihi(videoUrl, vtuandz, callback) {
+    request(videoUrl)
+      .pipe(fs.createWriteStream(__dirname + `/` + vtuandz))
+      .on("close", callback);
   }
-  var dataThread = (await Threads.getData(threadID));
-  var data = dataThread.data; 
-  const threadSetting = global.data.threadData.get(parseInt(threadID)) || {};
-  var arr = ["mpre","mprefix","prefix", "dấu lệnh", "prefix của bot là gì","daulenh", "duong", "what prefix", "freefix", "what is the prefix", "bot dead", "bots dead", "where prefix", "what is bot", "what prefix bot", "how to use bot" ,"how use bot", "where are the bots","bot not working","bot is offline","where prefix","prefx","prfix","prifx","perfix","bot not talking","where is bot"];
-  arr.forEach(i => {
-    let str = i[0].toUpperCase() + i.slice(1);
-    if (body === i.toUpperCase() | body === i | str === body) {
-const prefix = threadSetting.PREFIX || global.config.PREFIX;
-      if (data.PREFIX == null) {
-        return out(`𝐓𝐇𝐈𝐒 𝐈𝐒 𝐌𝐘 𝐏𝐑𝐄𝐅𝐈𝐗 ⇉ [ ${prefix} ]\n                   ♻️𝐎𝐖𝐍𝐄𝐑♻️:- 👑𝐁𝐀𝐃𝐎𝐋 𝐕𝐀𝐈👑 \n\n
-🖤𝐘𝐎𝐔 𝐂𝐀𝐍 𝐂𝐀𝐋𝐋 𝐇𝐈𝐌 🌺 𝐁𝐀𝐃𝐎𝐋 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬 🖤\n\n
-
-🌺🌿𝐁𝐀𝐃𝐎𝐋^𝐁𝐎𝐓^007🌺বট-এডমিন🌿🌺
-¶────██████────¶
- 
-¶────██████────¶
-
-¶────██████────¶
-
-¶────██████────¶
-
-¶────██████────¶
-
-¶────██████────¶
-
-¶────██████────¶
-
-¶────██████────¶
-
-¶────██████────¶
-
-¶────██████────¶
-
-¶─◥██████████◤─¶
-
-¶──◥████████◤──¶
-
-¶────◥████◤────¶
-
-¶─────◥██◤─────¶
-🌺✰𝐁𝐀𝐃𝐎𝐋^𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘★🌺`)
-      }
-      else return out('️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️️️️️️ ️️️️️️️️️️️️️️️️️️️️️️███████ ]▄▄▄▄▄▄▄▄\n▂▄▅█████████▅▄▃▂\nI███████████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤\n➢' + data.PREFIX)
-    }
-
-  });
+  if (body.toLowerCase() == "Prefix" || body.toLowerCase() == "prefix") {
+    let callback = function () {
+      return api.sendMessage(
+        {
+          body: `╭•┄┅══𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐁𝐎𝐓══┅┄•╮\n\n┏━━━━━━ [ 𝐁𝐨𝐭-𝐏𝐫𝐞𝐟𝐢𝐱-𝐂𝐦𝐝 ]━━➣\n┃➤𝐆𝐮𝐩-𝐍𝐚𝐦𝐞: ${threadName}\n┃➤𝐏𝐫𝐞𝐟𝐢𝐱: [ ${global.config.PREFIX} ]\n┃➤𝐁𝐨𝐭-𝐍𝐚𝐦𝐞: ${global.config.BOTNAME}\n┃➤𝐓𝐢𝐦𝐞: [ ${thu} || ${times} ] \n┃➤𝐁𝐨𝐭-𝐀𝐝𝐦𝐢𝐧: [ 𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐊𝐇𝐀𝐍 ]\n┗━━━━━━━━━━━━━━━━➢\n\n╰•┄┅══𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐁𝐎𝐓══┅┄•╯`,
+          attachment: [fs.createReadStream(__dirname + `/video.mp4`)],
+        },
+        event.threadID,
+        () => {
+          fs.unlinkSync(__dirname + `/video.mp4`);
+        },
+        event.messageID
+      );
+    };
+    vtuanhihi(video, "video.mp4", callback);
+  }
 };
 
-module.exports.run = async({ event, api }) => {
-    return api.sendMessage("error", event.threadID)
-}
+module.exports.run = async ({ api, event, args, Threads }) => {};
