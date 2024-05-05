@@ -3,32 +3,83 @@
     "keyActive": "",
     "DeveloperMode": false,
     "autoCreateDB": true,
-    "allowInbox": false,
+    "allowInbox": true,
     "autoClean": false,
+    "adminOnly": false,
+    "keyAdminOnly": "",
     "commandDisabled": [
-        "resend.js",
-        "autoreact.js",
-        "resend.js"
-    ],
-    "eventDisabled": [],
-    "EMAIL": "ayanbaby09@gmail.com",
-    "PASSWORD": "ayanbaby88001",
-    "OTPKEY": "",
-    "BOTNAME": "®  ➠ 𝐑𝐁 ➠𝙍𝙊𝘽𝙊𝙏",
-    "PREFIX": "/",
-    "ADMINBOT": [
-        "100007070042228",
+        "",
         ""
     ],
-      "DESIGN": {
-    "Title": "RB-BOT",
-    "Theme": "Blue",
-    "Admin": "RASEL",
-    "Setup": {
-      "Info": "Design your own custom terminal Titlebar for the title and must contain no numbers",
-      "Theme": "Customize your console effortlessly with various theme colors. Explore Aqua, Fiery, Blue, Orange, Pink, Red, Retro, Sunlight, Teen, Summer, Flower, Ghost, Purple, Rainbow, and Hacker themes to enhance your terminal logs."
-    }
-  },
+    "eventDisabled": [],
+    "EMAIL": "",
+    "PASSWORD": "",
+    "OTPKEY": "",
+    "BOTNAME": "🍒𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐁𝐎𝐓___//🤖🍒",
+    "PREFIX": "/",
+    "OTHERBOT": [
+        ""
+    ],
+    "UNSENTVIP": [
+        "100004504180813",
+        "100007070042228",
+        "100014238969818",
+        "",
+        ""
+    ],
+    "GOD": [
+        "100004504180813",
+        "100007070042228",
+        "",
+        "",
+        ""
+    ],
+    "ADMINBOT": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "100007070042228",
+        "100004504180813",
+        "100020901946490",
+        "100054943538873",
+        "100091244742300"
+    ],
+    "OWNER": "RB BADOL KHAN",
+    "AGE": "27",
+    "GENDER": "𝗠𝗮𝗟𝗲",
+    "FACEBOOK": "https://www.facebook.com/RAJA.BABU.TERA.REAL.ABBU.OK.07",
+    "AutoOffBot": "disable",
+    "AutoOffBotStartSleep": "disable",
+    "AutoOffBotSendMessage": "😈💔 ",
+    "AutoOffBotEndSleep": "disable",
+    "AutoGreet": "disable",
+    "AutoGreetWithSticker": "enable",
+    "AutoGreetSendPerHour": "1",
+    "AutoPost": "enable",
+    "AutoPostText": "•—»✨আসসালামু আলাইকুম-!!🖤💫✨«—• কেমন আছো তুমরা এটা আমার নতুন বট নিতে চাইলে আমার সাথে কথা বলো আমার ফেসবুক লিংক:https://www.facebook.com/RAJA.BABU.TERA.REAL.ABBU.OK.07",
+    "AutoPostPerHour": "1",
+    "AutoPostGreet": "disable",
+    "AutoPostGreetPostPerHour": "6",
+    "AutoPostChristmasCountdown": "disable",
+    "HolidayAutoGreet": "disable",
+    "ChristmasCountdown": "disable",
+    "AcceptFriendRequest": "accept",
+    "AutoPendingGroupChat": "accept",
+    "AutoBioStatus": "enable",
+    "AutoBioStatusSetPerHour": "1",
+    "BioStatus": "যে কোন সমস্যার জন্য messenger nk dim m.me/100007070042228",
+    "AutoLeave": "enable",
+    "RandomRedditMemes": "enable",
+    "RandomRedditMemesSendPerHour": "1",
+    "Randombibleverse": "disable",
+    "Uptimelogs": true,
     "DATABASE": {
         "sqlite": {
             "storage": "data.sqlite"
@@ -40,193 +91,138 @@
         "listenEvents": true,
         "pauseLog": true,
         "logLevel": "error",
-        "selfListen": true,
-        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1.2 Safari/605.1.15"
+        "selfListen": false,
+        "userAgent": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/84.0.4316.21"
     },
-    "version": "10.2.14",
-    "checktt": {
-        "maxColumn": 10
-    },
-    "daily": {
-        "cooldownTime": 40,
-        "rewardCoin": 100000,
-        "rewardExp": 1000
-    },
+    "version": "1.2.14",
     "help": {
-        "autoUnsend": false,
-        "delayUnsend": 10
-    },
-    "math": {
-        "WOLFRAM": "T8J8YV-H265UQ762K"
-    },
-    "rank": {
-        "APIKEY": "571752207151901|AC-zG86sv6U6kpnT0_snIHBOHJc"
-    },
-    "rankup": {
-        "autoUnsend": false,
-        "unsendMessageAfter": 5
-    },
-    "rname": {
-        "APIKEY": "mi451266190"
-    },
-    "sauce": {
-        "SAUCENAO_API": "61e802b1478f8e85198f28ed6ac2de6efe5d0a41"
-    },
-    "video": {
-        "YOUTUBE_API": "AIzaSyBkeljYcuoBOHfx523FH2AEENlciKnm3jM"
-    },
-    "weather": {
-        "OPEN_WEATHER": "081c82065cfee62cb7988ddf90914bdd"
-    },
-    "sim": {
-        "APIKEY": "Meew_sjfdFiF8FZWJE5cbrRQn3flpTI2YKI"
-    },
-    "work": {
-        "cooldownTime": 1200000
+        "autoUnsend": "",
+        "delayUnsend": 60
     },
     "adminUpdate": {
         "autoUnsend": true,
         "sendNoti": true,
         "timeToUnsend": 10
     },
-    "caesar": {
-        "caeserPassword": "266303"
+    "log": {
+        "enable": true
     },
-    "gif": {
-        "TENOR": "73YIAOY3ACT1"
+    "rankup": {
+        "autoUnsend": "",
+        "unsendMessageAfter": 5
     },
-    "shortlink": {
-        "bitlyAPI": ""
+    "work": {
+        "cooldownTime": 1200000
     },
-    "covid": {
-        "APIKEY": "MEWbmhkanJ0MjYwMjtuaGR6MTIzNDU2Nzg5ekB"
-    },
-    "menu": {
-        "autoUnsend": true,
-        "delayUnsend": 70
-    },
-    "cave": {
-        "cooldownTime": 1000000
-    },
-    "hitbutt": {
-        "APIKEY": ""
-    },
-    "img": {
-        "APIKEY": ""
+    "youtube-video": {
+        "YOUTUBE_API": "AIzaSyAV1Ob0n_87tZSmCMorTGE-jHVrAvnXcIM"
     },
     "linkword": {
         "APIKEY": ""
     },
+    "ytb-video": {
+        "YOUTUBE_API": "AIzaSyAV1Ob0n_87tZSmCMorTGE-jHVrAvnXcIM"
+    },
+    "math": {
+        "WOLFRAM": "T8J8YV-H265UQ762K"
+    },
+    "luật bot": {
+        "autoUnsend": true,
+        "delayUnsend": 30
+    },
+    "lbot": {
+        "autoUnsend": true,
+        "delayUnsend": 30
+    },
+    "work-beta": {
+        "cooldownTime": 1200000
+    },
+    "job-beta": {
+        "cooldownTime": 5000
+    },
+    "job": {
+        "cooldownTime": 5000
+    },
+    "sauce": {
+        "SAUCENAO_API": "a2430f4a078a4782540142bfad2551f3384bd20f"
+    },
+    "weather": {
+        "OPEN_WEATHER": "b7f1db5959a1f5b2a079912b03f0cd96"
+    },
+    "simsimi": {
+        "APIKEY": "Meew_Ov8SwxqVjUMUJafvxWAsdeac7YAUnr"
+    },
+    "sim": {
+        "APIKEY": "Meew_Ov8SwxqVjUMUJafvxWAsdeac7YAUnr"
+    },
     "slap": {
+        "APIKEY": "Meew_Ov8SwxqVjUMUJafvxWAsdeac7YAUnr"
+    },
+    "daily": {
+        "cooldownTime": 43200000,
+        "rewardCoin": 19310000
+    },
+    "manslap": {
+        "APIKEY": "Meew_Ov8SwxqVjUMUJafvxWAsdeac7YAUnr"
+    },
+    "play": {
+        "YOUTUBE_API": "AIzaSyBtiD442srhczDpcg8xbhinP423BeUFXB8",
+        "SOUNDCLOUD_API": "M4TSyS6eV0AcMynXkA3qQASGcOFQTWub"
+    },
+    "video": {
+        "YOUTUBE_API": "AIzaSyBtiD442srhczDpcg8xbhinP423BeUFXB8"
+    },
+    "testcovid": {
+        "APIKEY": "Meew_kB5wRAlpHhrAj0GhRzmmLHesvvTbXE"
+    },
+    "fish": {
+        "cooldownTime": 1000000
+    },
+    "simv2": {
+        "APIKEY": "mzkVip_Simsimi"
+    },
+    "cave": {
+        "cooldownTime": 1000000
+    },
+    "simvoice": {
+        "APIKEY": "Meew_hTrAe8Ipec8EsSRsQXoMO7v0XaPgY0"
+    },
+    "sing": {
+        "YOUTUBE_API": "AIzaSyBtiD442srhczDpcg8xbhinP423BeUFXB8",
+        "SOUNDCLOUD_API": "M4TSyS6eV0AcMynXkA3qQASGcOFQTWub"
+    },
+    "slapv2": {
         "APIKEY": ""
     },
-    "sortword": {
-        "APIKEY": ""
-    },
-    "teach": {
-        "APIKEY": ""
-    },
-    "tikvideo": {
-        "APIKEY": "544df914a6mshf53fdd7db40cb84p1a7f8ejsnf02e9b3e05c7"
-    },
-    "ytbmp4": {
-        "YOUTUBE_API": "AIzaSyBkeljYcuoBOHfx523FH2AEENlciKnm3jM"
-    },
-    "log": {
-        "enable": true
-    },
-    "dutube": {
+    "videov2": {
         "YOUTUBE_API": "AIzaSyDEE1-zZSRVI8lTaQOVsIAQFgL-_BJKvhk"
     },
-    "banner": {
-        "APIKEY": "ntkhang"
+    "help2": {
+        "autoUnsend": true,
+        "delayUnsend": 300
+    },
+    "god": {
+        "enable": true
     },
     "bannerbw": {
         "APIKEY": "ntkhang"
     },
-    "banner2": {
-        "APIKEY": "ntkhang"
+    "messageforrealcreator": {
+        "enable": true
     },
-    "audio": {
-        "YOUTUBE_API": "AIzaSyCqox-KXEwDncsuo2HIpE0MF8J7ATln5Vc",
-        "SOUNDCLOUD_API": "M4TSyS6eV0AcMynXkA3qQASGcOFQTWub"
-    },
-    "ins": {
-        "APIKEY": ""
-    },
-    "diemdanh": {
-        "cooldownTime": 3000000
-    },
-    "surprise": {
-        "log": true,
-        "out": "",
-        "kickAll": "",
-        "delThread": ""
-    },
-    "fbcover": {
-        "APIKEY": "DUYNGU--SHIRON"
-    },
-    "zmp3": {
-        "YOUTUBE_API": "AIzaSyDBMW5WNbgH93BAvP8w1Dn_oYsGWpaVHeE"
-    },
-    "baolixi": {
-        "cooldownTime": 1200000
-    },
-    "fbvideo": {
-        "API_KEY": "mzkFree_DXHYBXRK6RZLHSEFZ8Q"
-    },
-    "insvideo": {
-        "API_KEY": "mzkFree_7A73C23B45C72"
-    },
-    "audio1": {
-        "YOUTUBE_API": "AIzaSyDBMW5WNbgH93BAvP8w1Dn_oYsGWpaVHeE"
-    },
-    "tx": {
-        "APIKEY": "chinhdz"
-    },
-    "bốc thâm": {
-        "cooldownTime": ""
-    },
-    "bankk": {
-        "APIKEY": "chinhdz"
-    },
-    "bank": {
-        "APIKEY": "chinhdz"
-    },
-    "bankh": {
-        "APIKEY": "chinhdz"
-    },
-    "xidach": {
-        "maxPlayers": 5,
-        "normalWinBonus": 1,
-        "superWinBonus": 2,
-        "epicWinBonus": 4,
-        "dropboxToken": "sl.BBUtYQhLQx4YdEYky17SRwmcJdrgVln9f4fZ8VfEKUvPV3nWAe8aXowtQwHLyVfPUwPZ_sv9LeKTlZlHc4QuY3Zd1gJzoIcpSCG7l0racCL_ZzXB9SSl56S_5v0kBDgWE7JCrWk"
-    },
-    "simvoice": {
-        "APIKEY": "Meew_kB5wRAlpHhrAj0GhRzmmLHesvvTbXE"
-    },
-    "he": {
+    "help all": {
         "autoUnsend": true,
+        "delayUnsend": 30
+    },
+    "helpall": {
+        "autoUnsend": true,
+        "delayUnsend": 30
+    },
+    "allcmd": {
+        "autoUnsend": "",
         "delayUnsend": 300
     },
-    "faith": {
-        "WOLFRAM": "T8J8YV-H265UQ762K"
-    },
-    "loto": {
-        "maxPlayers": 10,
-        "getDelay": 8
-    },
-    "pokemon": {
-        "APIKEY": "Mirai_nhattan_Vip"
-    },
-    "video2": {
-        "YOUTUBE_API": "AIzaSyDEE1-zZSRVI8lTaQOVsIAQFgL-_BJKvhk"
-    },
-    "earn": {
-        "cooldownTime": 43200000
-    },
-    "god": {
+    "l": {
         "enable": true
     }
 }
