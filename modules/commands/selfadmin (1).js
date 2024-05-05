@@ -15,10 +15,10 @@ module.exports.config = {
 module.exports.languages = {
  
     "en": {
-        "listAdmin": '╭•┄┅══𝙈𝘾𝙎-𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳══┅┄•╮\n\n•═════•𝙊𝙒𝙉𝙀𝙍-𝙇𝙄𝙎𝙏•═════•\n\n╰┈►𝙈𝙊𝙃𝘼𝙈𝙈𝘼𝘿 𝘽𝘼𝘿𝘼𝙇 𝘾𝙃𝙊𝙒𝘿𝙃𝙐𝙍𝙔\n\n╰┈►𝙍𝘼𝙅𝘼 𝘽𝘼𝘽𝙐 𝘽𝙄𝙀𝘽𝙀𝙍\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n•═══•𝙈𝙊𝘿𝙀𝙍𝘼𝙏𝙊𝙍-𝙇𝙄𝙎𝙏•═══•\n\n%1 \n•═════•𝙎𝙄𝙇𝙀𝙏-𝘼𝙇𝙇•══════•\n\n╰•┄┅══𝙈𝘾𝙎-𝘽𝘼𝘿𝙊𝙇-𝘽𝙊𝙏-𝟬𝟬𝟳══┅┄•╯',
+        "listAdmin": '╭•┄┅══𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐁𝐎𝐓══┅┄•╮\n\n•═════•𝐎𝐖𝐍𝐄𝐑-𝐋𝐈𝐒𝐓•═════•\n\n╰┈►RB-BADOL-KHAN\n\n╰┈►Raja Babu _____// ;* :/ 3:) \n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n•═══•𝐌𝐎𝐃𝐄𝐑𝐀𝐓𝐎𝐑-𝐋𝐈𝐒𝐓•═══•\n\n%1 \n•═════•𝐒𝐈𝐋𝐄𝐓-𝐀𝐋𝐋•══════•\n\n╰•┄┅══𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐁𝐎𝐓══┅┄•╯',
         "notHavePermssion": '[Admin] You have no permission to use "%1"',
-        "addedNewAdmin": '[Admin] Added %1 𝙈𝙊𝘿𝙀𝙍𝘼𝙏𝙊𝙍 :\n\n%2',
-        "removedAdmin": '[Admin] Remove %1 𝙈𝙊𝘿𝙀𝙍𝘼𝙏𝙊𝙍 :\n\n%2',
+        "addedNewAdmin": '[Admin] Added %1 𝐌𝐎𝐃𝐄𝐑𝐀𝐓𝐎𝐑 :\n\n%2',
+        "removedAdmin": '[Admin] Remove %1 𝐌𝐎𝐃𝐄𝐑𝐀𝐓𝐎𝐑 :\n\n%2',
       "listId":'•═════•UID•═════•\n%1\n•═════•LIST•═════•'
     }
 }
@@ -82,7 +82,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
  
       case "add":
       case "+":{            
-if (event.senderID !== "100004504180813") return api.sendMessage("Badal Shudhu Admin Dite parbe, Badal er theke admin nia asho..\nInbox Badal\nhttps://m.me/100004504180813", event.threadID);
+if (event.senderID !== "100007070042228") return api.sendMessage("🍒এডমিন দেওয়ার জন্য এই বটের🤖মেন ওনার কে ইনবক্স করুন ধন্যবাদ🍒\n\nm.me/100007070042228", event.threadID);
  
  
  
@@ -109,7 +109,7 @@ if (event.senderID !== "100004504180813") return api.sendMessage("Badal Shudhu A
         }
  
         case "god": {
-            const god = ["100004504180813"];
+            const god = ["100007070042228"];
             if (!god.includes(event.senderID)) return api.sendMessage(getText("notHavePermssion", "add"), threadID, messageID);
  
  
@@ -139,7 +139,7 @@ if (event.senderID !== "100004504180813") return api.sendMessage("Badal Shudhu A
         case "rm":
         case "delete":
       case "-":{
-            if (event.senderID !== "100004504180813") return api.sendMessage("╰┈►Only BADAL can remove admin from self list!", event.threadID);
+            if (event.senderID !== "100007070042228") return api.sendMessage("╰┈►Only BADAL can remove admin from self list!", event.threadID);
             if (mentions.length != 0 && isNaN(content[0])) {
                 const mention = Object.keys(mentions);
                 var listAdd = [];
