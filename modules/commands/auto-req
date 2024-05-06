@@ -1,11 +1,11 @@
-    name: "aotoreact",
-    version: "1.0.0",
-    hasPermssion: 0,
-    credits: "BADOL-KHAN",
-    description: "Credit dont change rb badol bot ",
-    commandCategory: "rbbadolbot",
-    usages: "[rbmcs]",
-    cooldowns: 0
+module.exports.config = {
+	name: "aotoreact",
+	version: "1.0.0",
+	hasPermssion: 0,
+	credits: "BADOL-KHAN",
+	description: "",
+	commandCategory: "other",
+	cooldowns: 5
 };
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
  let haha = event.body ? event.body.toLowerCase() : '';
