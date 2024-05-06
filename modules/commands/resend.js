@@ -1,12 +1,17 @@
-const axios = require('axios');
-    name: "resend",
-    version: "1.0.0",
-    hasPermssion: 0,
-    credits: "BADOL-KHAN",
-    description: "Credit dont change rb badol bot ",
-    commandCategory: "rbbadolbot",
-    usages: "[rbmcs]",
-    cooldowns: 0
+module.exports.config = {
+	name: "resend",
+	version: "1.0.1", 
+	hasPermssion: 0,
+	credits: "BADOL-KHAN", //don't change the credits please
+	description: "Bot Owner Rb Badol Khan",
+	commandCategory: "...",
+	cooldowns: 1,
+	dependencies: 
+	{
+    "request":"",
+    "fs-extra":"",
+    "axios":""
+  }
 };
 module.exports.handleEvent = async function ({
   event: e,
