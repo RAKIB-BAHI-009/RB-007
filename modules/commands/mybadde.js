@@ -1,17 +1,16 @@
 module.exports.config = {
 	name: "mybadde",
-	version: "1.0.1", 
+	version: "1.0.1",
 	hasPermssion: 0,
-	credits: "BADOL-KHAN", //don't change the credits please
-	description: "Bot Owner Rb Badol Khan",
-	commandCategory: "...",
-	cooldowns: 1,
-	dependencies: 
-	{
-    "request":"",
-    "fs-extra":"",
-    "axios":""
-  }
+	credits: "RB-BADOL-KHAN",
+	description: "Muslim cyber security ",
+	commandCategory: "media",
+	usages: "[rb] [mcs]",
+	cooldowns: 5,
+	dependencies: {
+		"path": "",
+		"fs-extra": ""
+	}
 };
 
 module.exports.run = async function ({ event, api }) {
