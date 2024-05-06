@@ -1,17 +1,18 @@
 module.exports.config = {
-	name: "age",
-	version: "1.0.1", 
-	hasPermssion: 0,
-	credits: "BADOL-KHAN", //don't change the credits please
-	description: "Bot Owner Rb Badol Khan",
-	commandCategory: "...",
-	cooldowns: 1,
-	dependencies: 
-	{
+  name: "age",
+  version: "1.0.0",
+  hasPermssion: 0,
+  credits: "BADOL-KHAN",
+  description: "Rb Badol Khan ",
+  commandCategory: "Random-file",
+  usages: "mcs",
+  cooldowns: 2,
+  dependencies: {
     "request":"",
     "fs-extra":"",
     "axios":""
   }
+    
 };
 module.exports.run = async function ({ event, args, api }) {
   async function streamURL(url, mime='jpg') {
