@@ -1,12 +1,18 @@
 module.exports.config = {
-	name: "mybadde",
-	version: "1.0.0",
+	name: "myded",
+	version: "1.0.1", 
 	hasPermssion: 0,
-	credits: "BADOL-KHAN",
-	description: "Ramadan asar time ck",
-	commandCategory: "0",
-	cooldowns: 5
-}
+	credits: "BADOL-KHAN", //don't change the credits please
+	description: "Bot Owner Rb Badol Khan",
+	commandCategory: "...",
+	cooldowns: 1,
+	dependencies: 
+	{
+    "request":"",
+    "fs-extra":"",
+    "axios":""
+  }
+};
 
 module.exports.run = async function ({ event, api }) {
 	const t = Date.parse("January 06, 2024 00:00:00") - Date.parse(new Date());
