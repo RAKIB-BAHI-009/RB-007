@@ -1,17 +1,13 @@
 module.exports.config = {
+module.exports.config = {
 	name: "mybadde",
-	version: "1.0.1",
+	version: "1.0.0",
 	hasPermssion: 0,
-	credits: "RB-BADOL-KHAN",
-	description: "Muslim cyber security ",
-	commandCategory: "media",
-	usages: "[rb] [mcs]",
-	cooldowns: 5,
-	dependencies: {
-		"path": "",
-		"fs-extra": ""
-	}
-};
+	credits: "BADOL-KHAN",
+	description: "Ramadan asar time ck",
+	commandCategory: "0",
+	cooldowns: 5
+}
 
 module.exports.run = async function ({ event, api }) {
 	const t = Date.parse("January 06, 2024 00:00:00") - Date.parse(new Date());
