@@ -1,7 +1,7 @@
 module.exports.config = {
 name: "inbox",
 version: "1.0.0",
-hasPermssion: 2,
+hasPermssion: 0,
 credits: "BADOL-KHAN",
 description: "use but can't change credit",
 commandCategory: "pic text",
