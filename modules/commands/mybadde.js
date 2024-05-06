@@ -1,5 +1,4 @@
 module.exports.config = {
-module.exports.config = {
 	name: "mybadde",
 	version: "1.0.0",
 	hasPermssion: 0,
