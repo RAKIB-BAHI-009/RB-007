@@ -13,12 +13,12 @@ module.exports.run = async function({ api, event }) {
   const request = require("request");
   const { threadID } = event;
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
-    api.changeNickname(`🍒💜𝐑𝐁💙𝐁𝐀𝐃𝐎𝐋💛𝐁𝐎𝐓❤️🍒`, threadID, api.getCurrentUserID());
+    api.changeNickname(`🌼𝐑𝐀𝐊𝐈𝐁-𝐁𝐀𝐇𝐈-𝟎𝟎𝟕 🤖𝐁𝐎𝐓`, threadID, api.getCurrentUserID());
     return api.sendMessage(`🍒═══════❤️💛💙💜💚═══════🍒\n\n🤍আসসালামুআলাইকুম-কেমন-আছেন-সবাই🤍\n
 💜বট সংযুক্ত গ্রুপ চ্যাটে সফলভাবে যোগ করা হচ্ছে💙\n
-💛কিরে বাঁদর গুলা শয়তানি করার জন্য অ্যাড দিছস❤️\nযেকোনো কমান্ড দেখতে ${global.config.PREFIX}help ব্যবহার করুন\n
+💛কিরে 🐒 শয়তানি করার জন্য অ্যাড দিছস❤️\nযেকোনো কমান্ড দেখতে ${global.config.PREFIX}help ব্যবহার করুন\n
 \n\n╔═══════☆♡☆═══════╗\n\n╰┈➤উদাহারণ➤\n\n╰┈➤${global.config.PREFIX}inf ➤ \n╰┈➤${global.config.PREFIX}admin ➤ \n╰┈➤${global.config.PREFIX}owner ➤ \n╰┈➤${global.config.PREFIX}help ➤\n\n┗━━━━ ✦❘༻༺❘✦ ━━━━━┛\n★★★▰▱▰▱▰▱▰▰▱▰▱▰▱▰▱▰▱▰★★★\n
-★যেকোনো অভিযোগ অথবা হেল্প এর জন্য আমার★\n★বস ✰𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐊𝐇𝐀𝐍 কে নক করতে পারেন★\n\n\n╰┈➤𝐖𝐩: wa.me/+8801782721761\n\n╰┈➤ 𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊: https://www.facebook.com/www.xxx.com61\n\n╰┈➤𝐌𝐄𝐒𝐒𝐄𝐍𝐆𝐀𝐑𝐄: m.me/100000939642985\n\n🍒═══════❤️💛💙💜💚═══════🍒`, threadID);
+★যেকোনো অভিযোগ অথবা হেল্প এর জন্য আমার★\n★বস ✰𝐑𝐀𝐊𝐈𝐁 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘 কে নক করতে পারেন★\n\n\n╰┈➤𝐖𝐩: wa.me/+8801771306867\n\n╰┈➤ 𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊: https://www.facebook.com/SYSTEM.ERROR.KING\n\n╰┈➤𝐌𝐄𝐒𝐒𝐄𝐍𝐆𝐀𝐑𝐄: m.me/100025013732141\n\n🍒═══════❤️💛🤖💜💚═══════👻`, threadID);
   }
   else {
     try {
@@ -52,10 +52,7 @@ memLength.sort((a, b) => a - b);
       .replace(/\{threadName}/g, threadName);			
 
       var link = [
-"https://i.imgur.com/i6bqJPo.mp4",
-"https://i.imgur.com/i6bqJPo.mp4",
-"https://i.imgur.com/i6bqJPo.mp4",
-"https://i.imgur.com/i6bqJPo.mp4",
+"https://i.imgur.com/mPIk0Vt.mp4",
       ];
         var callback = () => api.sendMessage({ body: msg, attachment: fs.createReadStream(__dirname + "/cache/leiamnashJ.mp4"), mentions }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/leiamnashJ.mp4"));
     return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/leiamnashJ.mp4")).on("close", () => callback());       
