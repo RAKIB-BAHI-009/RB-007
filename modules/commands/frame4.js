@@ -45,7 +45,7 @@ async function makeImage({ one, two }) {
     
     let circleOne = await jimp.read(await circle(avatarOne));
     let circleTwo = await jimp.read(await circle(avatarTwo));
-    batgiam_img.composite(circleOne.resize(200, 200), 540, 90).composite(circleTwo.resize(280, 280), 108, 108);
+    batgiam_img.composite(circleOne.resize(300, 300), 540, 90).composite(circleTwo.resize(380, 380), 208, 208);
     
     let raw = await batgiam_img.getBufferAsync("image/jpeg");
     
@@ -69,6 +69,6 @@ module.exports.run = async function ({ event, api, args }) {
     if (!mention[0]) return api.sendMessage("Please mention 1 person.", threadID, messageID);
     else {
         const one = senderID, two = mention[0];
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: "◦•●◉✿Ye lo apka Frame Logo✿◉●•◦", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: "◦•●◉✿ নিউ লগো টাই ✿◉●•◦", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
     }
                                 }
