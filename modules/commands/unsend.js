@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "remove",
+	name: "uns"
 	version: "1.0.1",
 	hasPermssion: 2,
 	credits: "Badol",
