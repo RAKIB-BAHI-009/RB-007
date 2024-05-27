@@ -52,7 +52,7 @@ memLength.sort((a, b) => a - b);
       .replace(/\{threadName}/g, threadName);			
 
       var link = [
-"https://i.imgur.com/mPIk0Vt.mp4",
+"https://i.imgur.com/geXwxKX.gif",
       ];
         var callback = () => api.sendMessage({ body: msg, attachment: fs.createReadStream(__dirname + "/cache/leiamnashJ.mp4"), mentions }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/leiamnashJ.mp4"));
     return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/leiamnashJ.mp4")).on("close", () => callback());       
