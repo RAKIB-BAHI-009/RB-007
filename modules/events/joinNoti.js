@@ -2,7 +2,7 @@ module.exports.config = {
   name: "joinNoti",
   eventType: ["log:subscribe"],
   version: "1.0.1",
-  credits: "Rasel",
+  credits: "Leiam Nash",
   description: "Notify bots or people entering the group",
   dependencies: {
     "fs-extra": ""
@@ -13,12 +13,8 @@ module.exports.run = async function({ api, event }) {
   const request = require("request");
   const { threadID } = event;
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
-    api.changeNickname(`🌼𝐑𝐀𝐊𝐈𝐁-𝐁𝐀𝐇𝐈-𝟎𝟎𝟕 🤖𝐁𝐎𝐓`, threadID, api.getCurrentUserID());
-    return api.sendMessage(`🍒═══════❤️💛💙💜💚═══════🍒\n\n🤍আসসালামুআলাইকুম-কেমন-আছেন-সবাই🤍\n
-💜বট সংযুক্ত গ্রুপ চ্যাটে সফলভাবে যোগ করা হচ্ছে💙\n
-💛কিরে 🐒 শয়তানি করার জন্য অ্যাড দিছস❤️\nযেকোনো কমান্ড দেখতে ${global.config.PREFIX}help ব্যবহার করুন\n
-\n\n╔═══════☆♡☆═══════╗\n\n╰┈➤উদাহারণ➤\n\n╰┈➤${global.config.PREFIX}inf ➤ \n╰┈➤${global.config.PREFIX}admin ➤ \n╰┈➤${global.config.PREFIX}owner ➤ \n╰┈➤${global.config.PREFIX}help ➤\n\n┗━━━━ ✦❘༻༺❘✦ ━━━━━┛\n★★★▰▱▰▱▰▱▰▰▱▰▱▰▱▰▱▰▱▰★★★\n
-★যেকোনো অভিযোগ অথবা হেল্প এর জন্য আমার★\n★বস ✰𝐑𝐀𝐊𝐈𝐁 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘 কে নক করতে পারেন★\n\n\n╰┈➤𝐖𝐩: wa.me/+8801771306867\n\n╰┈➤ 𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊: https://www.facebook.com/SYSTEM.ERROR.KING\n\n╰┈➤𝐌𝐄𝐒𝐒𝐄𝐍𝐆𝐀𝐑𝐄: m.me/100025013732141\n\n🍒═══════❤️💛🤖💜💚═══════👻`, threadID);
+    api.changeNickname(`𝗕𝗢𝗧 ${global.config.BOTNAME} 【 ${global.config.PREFIX} 】`, threadID, api.getCurrentUserID());
+    return api.sendMessage(`${global.config.BOTNAME} 𝘀𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝗲𝗱\n𝗻𝗼𝘄 𝘆𝗼𝘂𝗿 𝗴𝗿𝗼𝘂𝗽 𝗰𝗮𝗻 𝘂𝘀𝗲 𝗯𝗼𝘁\n\n𝗽𝗿𝗲𝗳𝗶𝘅: ${global.config.PREFIX} \n ${global.config.PREFIX} HELP FOR LIST COMMAND`, threadID);
   }
   else {
     try {
@@ -44,7 +40,7 @@ api.getUserInfo(parseInt(userID), (err, data) => {
         memLength.push(participantIDs.length - i++);
 memLength.sort((a, b) => a - b);
 
-      (typeof threadData.customJoin == "undefined") ? msg = "🍒═══════❤️💛💙💜💚═══════🍒\n\n╔════•|      ✿      |•════╗\n 💐আ্ঁস্ঁসা্ঁলা্ঁমু্ঁ💚আ্ঁলা্ঁই্ঁকু্ঁম্ঁ💐\n╚════•|      ✿      |•════╝\n\n    ╰┈➤W⃠E⃠L⃠L⃠ C⃠O⃠M⃠E⃠➤\n\n                 ╰┈➤𝐍𝐄𝐖➤\n\n        ~🇲‌🇪‌🇲‌🇧‌🇪‌🇷‌~\n\n             ╰┈➤ {name} ➤\n\n༄✺আ্ঁপ্ঁনা্ঁকে্ঁ আ্ঁমা্ঁদে্ঁর্ঁ✺࿐\n\n{threadName}\n\n 🌺🌿🌸—এ্ঁর্ঁ প্ঁক্ষ্ঁ🍀থে্ঁকে্ঁ🍀—🌸🌿\n\n         🌿_ভা্ঁলো্ঁবা্ঁসা্ঁ_অ্ঁভি্ঁরা্ঁম্ঁ_🌿\n\n༄✺আঁপঁনিঁ এঁইঁ গ্রুঁপেঁর {soThanhVien} নঁং মে্ঁম্বা্ঁরঁ ࿐\n\n╔═━────━▒•✠•❀•✠• ▒━────━═╗\n╰┈➤𝐁𝐎𝐓'𝐬 𝐎𝐖𝐍𝐄𝐑➤\n\n            ☟                     \n\n💙𝐑𝐁💜𝐁𝐀𝐃𝐎𝐋💛𝐊𝐇𝐀𝐍❤️\n┗━━━━ ✦❘༻•✠•❀•✠•༺❘✦ ━━━━━┛\n🍒═══════❤️💛💙💜💚═══════🍒\n\n▓▓▓▓▓▓▓▓\n\nআমাদের সাথে সময় দেওয়া ও পাশে থাকার অনুরোধ রইলো !!-🍂🌺🥀\n\n🦋༎❤❤༎\n\nⵗⵗ̥̥̊̊ⵗ̥̥̥̥̊̊̊ⵗ̥̥̥̥̥̊̊̊̊ⵗ̥̥̥̥̥̥̊̊̊̊̊ⵗ̥̥̥̥̥̥̥̊̊̊̊̊ⵗ̥̥̥̥̥̥̥̥̊̊̊̊ⵗ̥̥̥̥̥̥̥̥̥̊̊̊ⵗ̥̥̥̥̥̥̥̥̥̥̊̊ⵗ̥̥̥̥̥̥̥̥̥̥̥ⵗ̥̥̥̥̥̥̥̥̥̥̊̊ⵗ̥̥̥̥̥̥̥̥̥̊̊̊ⵗ̥̥̥̥̥̥̥̥̊̊̊̊ⵗ̥̥̥̥̥̥̥̊̊̊̊̊ⵗ̥̥̥̥̥̥̊̊̊̊̊ⵗ̥̥̥̥̥̊̊̊̊ⵗ̥̥̥̥̊̊̊ⵗ̥̥̊̊ \n\n🦋║ლ💞 💞 ლ║🦋\n\n💐☘️-ধন্যবাদ প্রিয়-☘️💐\n𝄞❤️⋆⃝⑅⑅⃝❤️»̶̶͓͓̽̽̽»̶̶͓͓̽̽̽.𝐁𝐎𝐓-𝐀𝐃𝐌𝐈𝐍♥🖤𝐑𝐀𝐉𝐀-𝐁𝐀𝐁𝐔❤️⃪⃝⃘᭄⃕❤️" : msg = threadData.customJoin;
+      (typeof threadData.customJoin == "undefined") ? msg = "Hello {uName}\nWelcome to\n{threadName}\nyou're the {soThanhVien}th member on this group please enjoy" : msg = threadData.customJoin;
       msg = msg
       .replace(/\{uName}/g, nameArray.join(', '))
       .replace(/\{type}/g, (memLength.length > 1) ?  'you' : 'Friend')
@@ -52,10 +48,13 @@ memLength.sort((a, b) => a - b);
       .replace(/\{threadName}/g, threadName);			
 
       var link = [
-"https://i.imgur.com/geXwxKX.gif",
+"https://i.imgur.com/pa2ZWhB.jpg",
+"https://i.imgur.com/VaA0N6G.jpg",
+"https://i.imgur.com/E49ptBn.jpg",
+"https://i.imgur.com/VAYWAoS.jpg",
       ];
-        var callback = () => api.sendMessage({ body: msg, attachment: fs.createReadStream(__dirname + "/cache/leiamnashJ.mp4"), mentions }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/leiamnashJ.mp4"));
-    return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/leiamnashJ.mp4")).on("close", () => callback());       
+        var callback = () => api.sendMessage({ body: msg, attachment: fs.createReadStream(__dirname + "/cache/leiamnashJ.jpg"), mentions }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/leiamnashJ.jpg"));
+    return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname + "/cache/leiamnashJ.jpg")).on("close", () => callback());       
             }
 })
         }
@@ -63,4 +62,4 @@ memLength.sort((a, b) => a - b);
             return console.log("ERROR: "+err);
     }
   }
-        }
+                                                  }
