@@ -14,8 +14,7 @@ module.exports.config = {
 module.exports.run = async ({ api, event, args }) => {
   try {
     const links = [
-      "https://i.imgur.com/RUMuaL1.jpeg",
-      "https://i.imgur.com/RUMuaL1.jpeg"
+      "https://i.imgur.com/tnSbKGv.jpeg"
     ];
     const randomLink = links[Math.floor(Math.random() * links.length)];
 
