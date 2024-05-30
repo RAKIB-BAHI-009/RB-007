@@ -42,17 +42,17 @@ const { createReadStream, existsSync, mkdirSync, readdirSync } = global.nodemodu
     let callback = function () {
       return api.sendMessage(
         {
-          body: `╭•┄┅══𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐁𝐎𝐓══┅┄•╮\n\n┏━━━━━━ [ 𝐁𝐨𝐭-𝐏𝐫𝐞𝐟𝐢𝐱-𝐂𝐦𝐝 ]━━➣\n┃➤𝐆𝐮𝐩-𝐍𝐚𝐦𝐞: ${threadName}\n┃➤𝐏𝐫𝐞𝐟𝐢𝐱: [ ${global.config.PREFIX} ]\n┃➤𝐁𝐨𝐭-𝐍𝐚𝐦𝐞: ${global.config.BOTNAME}\n┃➤𝐓𝐢𝐦𝐞: [ ${thu} || ${times} ] \n┃➤𝐁𝐨𝐭-𝐀𝐝𝐦𝐢𝐧: [ 𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐊𝐇𝐀𝐍 ]\n┗━━━━━━━━━━━━━━━━➢\n\n╰•┄┅══𝐑𝐁-𝐁𝐀𝐃𝐎𝐋-𝐁𝐎𝐓══┅┄•╯`,
+          body: `╭•┄═𝐑𝐀𝐊𝐈𝐁-𝐁𝐨𝐭-𝟎𝟎𝟕 ═┄•╮\n\n┏━━━━━━ [ 𝐁𝐨𝐭-𝐏𝐫𝐞𝐟𝐢𝐱-𝐂𝐦𝐝 ]━━➣\n\n┃➤𝐆𝐮𝐩-𝐍𝐚𝐦𝐞: ${threadName}\n\n┃➤𝐏𝐫𝐞𝐟𝐢𝐱: [ ${global.config.PREFIX} ]\n\n┃➤𝐁𝐨𝐭-𝐍𝐚𝐦𝐞: ${global.config.BOTNAME}\n\n┃➤𝐓𝐢𝐦𝐞: [ ${thu} || ${times} ] \n┃➤𝐁𝐨𝐭-𝐀𝐝𝐦𝐢𝐧: [ 𝐑𝐀𝐊𝐈𝐁 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘 ]\n┗━━━━━━━━━━━━━━━━➢\n\n╰•┄═𝐑𝐀𝐊𝐈𝐁-𝐁𝐎𝐓-𝟎𝟎𝟕-═┅•╯`,
           attachment: [fs.createReadStream(__dirname + `/video.mp4`)],
         },
         event.threadID,
         () => {
-          fs.unlinkSync(__dirname + `/video.mp4`);
+          fs.unlinkSync(__dirname + `/https://i.imgur.com/upBVzJQ.jpeg`);
         },
         event.messageID
       );
     };
-    vtuanhihi(video, "video.mp4", callback);
+    vtuanhihi(video, "https://i.imgur.com/upBVzJQ.jpeg", callback);
   }
 };
 
